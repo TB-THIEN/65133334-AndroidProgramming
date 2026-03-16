@@ -40,39 +40,10 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
         TIMDIEUKIEN();
-
-
-        nutcong.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                XuLiCong();
-            }
-        });
-
-        nuttru.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                XuLiTru();
-            }
-        });
-
-        nutnhan.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                XuLiNhan();
-            }
-        });
-
-        nutchia.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                XuLiChia();
-            }
-        });
     }
 
 
-void XuLiCong(){
+    public void XuLiCong(View v){
 
 
         //LẤY DỮ LIỆU
@@ -92,7 +63,7 @@ void XuLiCong(){
         //GÁN KẾT QUẢ LÊN ĐIỀU KHIỂN
         editTextKq.setText(chuoiKQ);
     }
-void XuLiTru(){
+    public void XuLiTru(View v){
         //LẤY DỮ LIỆU
         String Sothu1 = editTextSo1.getText().toString();
         String Sothu2 = editTextSo2.getText().toString();
@@ -108,7 +79,7 @@ void XuLiTru(){
         //GÁN KẾT QUẢ LÊN ĐIỀU KHIỂN
         editTextKq.setText(chuoiKQ);
     }
-void XuLiNhan(){
+    public void XuLiNhan(View v){
         //LẤY DỮ LIỆU
         String Sothu1 = editTextSo1.getText().toString();
         String Sothu2 = editTextSo2.getText().toString();
@@ -124,7 +95,7 @@ void XuLiNhan(){
         //GÁN KẾT QUẢ LÊN ĐIỀU KHIỂN
         editTextKq.setText(chuoiKQ);
     }
-void XuLiChia(){
+    public void XuLiChia(View v){
         //LẤY DỮ LIỆU
         String Sothu1 = editTextSo1.getText().toString();
         String Sothu2 = editTextSo2.getText().toString();
