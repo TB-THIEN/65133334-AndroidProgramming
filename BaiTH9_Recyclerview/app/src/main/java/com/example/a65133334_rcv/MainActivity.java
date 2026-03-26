@@ -29,8 +29,10 @@ public class MainActivity extends AppCompatActivity {
         });
         recyclerViewDatas = getDataForRecyclerView();
         recyclerViewLandScape = findViewById(R.id.recyclerLand);
-        RecyclerView.LayoutManager layoutLinear = new LinearLayoutManager(this);
-        recyclerViewLandScape.setLayoutManager(layoutLinear);
+        //RecyclerView.LayoutManager layoutLinear = new LinearLayoutManager(this);
+        //recyclerViewLandScape.setLayoutManager(layoutLinear);
+        RecyclerView.LayoutManager layoutLinearHorizonal = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
+        recyclerViewLandScape.setLayoutManager(layoutLinearHorizonal);
         landScapeAdapter = new LandScapeAdapter(this, recyclerViewDatas);
         recyclerViewLandScape.setAdapter(landScapeAdapter);
     }
