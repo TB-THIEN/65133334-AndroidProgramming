@@ -1,45 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-  <LinearLayout
-      android:padding="1dp"
-      android:layout_width="match_parent"
-      android:layout_height="50dp"
-      android:background="#E9951A"
-      android:orientation="horizontal">
-  <ImageView
-      android:id="@+id/AnhDaiDien"
-      android:layout_width="50dp"
-      android:background="#0DC7DE"
-      android:layout_height="50dp"/>
-      <LinearLayout
-          android:layout_width="match_parent"
-          android:layout_height="40dp"
-          android:orientation="vertical">
-          <TextView
+    android:layout_height="60dp"
+    android:background="#14A7E9"
+    android:orientation="horizontal">
+
+
+    <ImageView
+        android:id="@+id/AnhDaiDien"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        tools:srcCompat="@tools:sample/avatars" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="1dp"
+        android:orientation="vertical">
+
+        <TextView
             android:id="@+id/tvTenMon"
             android:layout_width="match_parent"
-            android:layout_height="15dp"
+            android:layout_height="20dp"
+            android:text="mon thu nhat"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/tvDonGia"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="Gia"
             android:textSize="13dp"
-            android:text="Mon thu nhat"/>
-          <TextView
-              android:id="@+id/tvDonGia"
-              android:layout_width="match_parent"
-              android:layout_height="15dp"
-              android:textSize="10dp"
-              android:text="20000"/>
+            tools:ignore="TextSizeCheck" />
 
-          <TextView
-              android:id="@+id/tvMoTa"
-              android:layout_width="match_parent"
-              android:layout_height="15dp"
-              android:text="Mo ta"
-              android:textSize="10dp" />
+        <TextView
+            android:id="@+id/tvMoTa"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="Mo ta"
+            android:textSize="10dp"
+            tools:ignore="TextSizeCheck" />
+    </LinearLayout>
 
-      </LinearLayout>
-  </LinearLayout>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

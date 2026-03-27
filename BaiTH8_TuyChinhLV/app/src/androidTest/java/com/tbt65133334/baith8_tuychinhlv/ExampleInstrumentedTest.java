@@ -1,4 +1,4 @@
-package com.example.a65133334_appmonan;
+package com.tbt65133334.baith8_tuychinhlv;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.example.a65133334_appmonan", appContext.getPackageName());
+        assertEquals("com.tbt65133334.baith8_tuychinhlv", appContext.getPackageName());
     }
 }

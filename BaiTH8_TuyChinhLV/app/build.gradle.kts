@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.a65133334_appmonan"
+    namespace = "com.tbt65133334.baith8_tuychinhlv"
     compileSdk {
         version = release(36) {
             minorApiLevel = 1
@@ -11,7 +11,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.example.a65133334_appmonan"
+        applicationId = "com.tbt65133334.baith8_tuychinhlv"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
