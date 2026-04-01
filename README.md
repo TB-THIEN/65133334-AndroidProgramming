@@ -1,3 +1,8 @@
+### Bài tập 13: ThayDoiFragment
+<img width="321" height="712" alt="image" src="https://github.com/user-attachments/assets/b0412e41-9a2b-4833-9564-691f4e3d3f21" />
+<img width="321" height="715" alt="image" src="https://github.com/user-attachments/assets/e1fc5b1d-bcee-4331-9d7f-12691393f5d8" />
+<img width="317" height="718" alt="image" src="https://github.com/user-attachments/assets/248e680f-a769-4933-baff-783badbb7364" />
+
 ### Bài tập 12: FragmentDong
 <img width="200" height="400" alt="image" src="https://github.com/user-attachments/assets/3bd8c926-2222-4993-b2a2-80f3ff9c5d5d" />
 
