@@ -1,3 +1,6 @@
+### Bài tập 12: FragmentDong
+<img width="321" height="710" alt="image" src="https://github.com/user-attachments/assets/3bd8c926-2222-4993-b2a2-80f3ff9c5d5d" />
+
 ### Bài tập 11: FragmentTinh
 <img width="195" height="431" alt="image" src="https://github.com/user-attachments/assets/0d0dab14-2998-4503-826a-a099f79fad10" />
 
