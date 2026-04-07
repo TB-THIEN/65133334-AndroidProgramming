@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Welcome"
+        android:id="@+id/navigation_welcome"
+        android:icon="@android:drawable/star_big_on" />
+    <item
+        android:title="Cau1"
+        android:id="@+id/navigation_cau1"
+        android:icon="@android:drawable/btn_star_big_on" />
+    <item
+        android:title="Cau2"
+        android:id="@+id/navigation_cau2"
+        android:icon="@android:drawable/ic_menu_mapmode"/>
+    <item
+        android:title="Cau3"
+        android:id="@+id/navigation_cau3"
+        android:icon="@android:drawable/checkbox_on_background"/>
+    <item
+        android:title="Cau4"
+        android:id="@+id/navigation_cau4"
+        android:icon="@android:drawable/btn_star_big_on" />
+
+</menu>
