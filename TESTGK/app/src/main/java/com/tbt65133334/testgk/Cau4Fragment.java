@@ -1,5 +1,6 @@
 package com.tbt65133334.testgk;
 
+import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,41 +8,25 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.TextView;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link Cau4Fragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+import java.util.Random;
+
 public class Cau4Fragment extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    private TextView tvBotChoice, tvResult, tvScore;
+    private Button btnKeo, btnBua, btnBao, btnReset;
+    private int botScore = 0;
+    private int playerScore = 0;
 
     public Cau4Fragment() {
-        // Required empty public constructor
+
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment Cau4Fragment.
-     */
-    // TODO: Rename and change types and number of parameters
     public static Cau4Fragment newInstance(String param1, String param2) {
         Cau4Fragment fragment = new Cau4Fragment();
         Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
         fragment.setArguments(args);
         return fragment;
     }
@@ -49,16 +34,59 @@ public class Cau4Fragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_cau4, container, false);
+        View view = inflater.inflate(R.layout.fragment_cau4, container, false);
+
+        tvBotChoice = view.findViewById(R.id.tv_BotChoice);
+        tvResult = view.findViewById(R.id.tv_Result);
+        tvScore = view.findViewById(R.id.tv_Score);
+        btnKeo = view.findViewById(R.id.btn_Keo);
+        btnBua = view.findViewById(R.id.btn_Bua);
+        btnBao = view.findViewById(R.id.btn_Bao);
+        btnReset = view.findViewById(R.id.btn_Reset);
+
+        btnKeo.setOnClickListener(v -> playGame(0));
+        btnBua.setOnClickListener(v -> playGame(1));
+        btnBao.setOnClickListener(v -> playGame(2));
+
+        btnReset.setOnClickListener(v -> {
+            botScore = 0;
+            playerScore = 0;
+            tvScore.setText("Máy: 0  |  Bạn: 0");
+            tvResult.setText("Mời bạn ra chiêu!");
+            tvResult.setTextColor(Color.BLACK);
+            tvBotChoice.setText("🤖");
+        });
+
+        return view;
+    }
+
+    private void playGame(int playerChoice) {
+        int botChoice = new Random().nextInt(3);
+
+        if (botChoice == 0) tvBotChoice.setText("✌️");
+        else if (botChoice == 1) tvBotChoice.setText("✊");
+        else tvBotChoice.setText("✋");
+
+        if (playerChoice == botChoice) {
+            tvResult.setText("HÒA NHAU!");
+            tvResult.setTextColor(Color.GRAY);
+        } else if ((playerChoice == 0 && botChoice == 2) ||
+                (playerChoice == 1 && botChoice == 0) ||
+                (playerChoice == 2 && botChoice == 1)) {
+            tvResult.setText("BẠN THẮNG! 🎉");
+            tvResult.setTextColor(Color.parseColor("#4CAF50"));
+            playerScore++;
+        } else {
+            tvResult.setText("MÁY THẮNG! 😢");
+            tvResult.setTextColor(Color.parseColor("#F44336"));
+            botScore++;
+        }
+
+        tvScore.setText("Máy: " + botScore + "  |  Bạn: " + playerScore);
     }
 }
