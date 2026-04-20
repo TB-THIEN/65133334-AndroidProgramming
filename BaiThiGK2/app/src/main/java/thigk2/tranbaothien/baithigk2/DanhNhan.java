@@ -5,23 +5,23 @@ public class DanhNhan {
     String DanhNhanCation;
 
     public DanhNhan(String landImageFileName, String landCation) {
-        this.landImageFileName = landImageFileName;
-        this.landCation = landCation;
+        this.DanhNhanImageFileName = DanhNhanImageFileName;
+        this.DanhNhanCation = DanhNhanCation;
     }
 
-    public String getLandImageFileName() {
-        return landImageFileName;
+    public String getDanhNhanImageFileName() {
+        return DanhNhanImageFileName;
     }
 
-    public void setLandImageFileName(String landImageFileName) {
-        this.landImageFileName = landImageFileName;
+    public void setDanhNhanImageFileName(String landImageFileName) {
+        this.DanhNhanImageFileName = DanhNhanImageFileName;
     }
 
-    public String getLandCation() {
-        return landCation;
+    public String getDanhNhanCation() {
+        return DanhNhanCation;
     }
 
-    public void setLandCation(String landCation) {
-        this.landCation = landCation;
+    public void setDanhNhanCation(String landCation) {
+        this.DanhNhanCation = DanhNhanCation;
     }
 }
