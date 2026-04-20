@@ -10,7 +10,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
-
 import java.util.Random;
 
 public class Cau4Fragment extends Fragment {
@@ -67,7 +66,6 @@ public class Cau4Fragment extends Fragment {
 
     private void playGame(int playerChoice) {
         int botChoice = new Random().nextInt(3);
-
         if (botChoice == 0) tvBotChoice.setText("✌️");
         else if (botChoice == 1) tvBotChoice.setText("✊");
         else tvBotChoice.setText("✋");
