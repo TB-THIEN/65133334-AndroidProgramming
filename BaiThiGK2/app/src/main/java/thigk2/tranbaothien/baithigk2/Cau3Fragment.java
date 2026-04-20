@@ -54,6 +54,9 @@ public class Cau3Fragment extends Fragment {
         DanhNhan danhNhan1 = new DanhNhan("bacho", "Chủ tịch Hồ Chí Minh");
         dsDuLieu.add(danhNhan1);
         dsDuLieu.add(new DanhNhan("tranhungdao", "Trần Hưng Đạo"));
+        dsDuLieu.add(new DanhNhan("macdinhchi", "Mạc Đỉnh Chi"));
+        dsDuLieu.add(new DanhNhan("lythuongkiet", "Lý Thường Kiệt"));
+        dsDuLieu.add(new DanhNhan("vonguyengiap", "Võ Nguyên Giáp"));
 
         return dsDuLieu;
     }
