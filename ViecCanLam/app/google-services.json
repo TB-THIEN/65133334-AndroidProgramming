@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "831106572524",
+    "project_id": "android-vcl",
+    "storage_bucket": "android-vcl.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:831106572524:android:9c64b121bbde41509a05c9",
+        "android_client_info": {
+          "package_name": "com.tbt65133334.vieccanlam"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBX-1Pv2SE64laxZf9JVug9dvw-4AYCGVM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
