@@ -1,3 +1,8 @@
+### Bài tập 14: ToDoListApp
+<img width="372" height="809" alt="image" src="https://github.com/user-attachments/assets/35f7e1ca-913a-4386-99dd-c0d1591794bb" />
+<img width="373" height="809" alt="image" src="https://github.com/user-attachments/assets/4a253e3f-b6ba-48a5-939b-1eef347a5f5f" />
+
+
 ### Bài tập gk:
 <img width="347" height="756" alt="image" src="https://github.com/user-attachments/assets/20b3f0d5-7a81-4963-8155-9cf8c27325a7" />
 <img width="349" height="765" alt="image" src="https://github.com/user-attachments/assets/9d46e167-381e-4586-8c83-bc81a02d1a15" />
